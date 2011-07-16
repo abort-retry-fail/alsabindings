@@ -1,0 +1,3 @@
+#!/bin/bash
+## Just lowers volume, without touching mute
+amixer -c 0 set Master 1- 

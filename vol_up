@@ -1,0 +1,3 @@
+#!/bin/bash
+## Raises volume and unmutes if necessary
+amixer -c 0 set Master 1+ unmute

@@ -1,0 +1,7 @@
+#!/bin/bash
+## Mute toggle
+on="off"
+off="on"
+now=$(amixer get Master | tr -d '[]' | grep "Playback.*%" |head -n1 |awk '{print $6}')
+
+amixer set Master ${!now}
